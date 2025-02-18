@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Soil Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Vital Soil Academy</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#ai-insights">AI Insights</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Vital Soil Academy is committed to empowering farmers and agricultural enthusiasts by providing expert-led online courses on regenerative and sustainable farming. 
+            Our mission is to bridge the gap between modern technology and traditional farming techniques, helping individuals create more efficient, eco-friendly, and sustainable agricultural systems.
+        </p>
+        <p>
+            Through our interactive AI-driven insights, hands-on courses, and a thriving community, we aim to build a world where agriculture is **resilient, regenerative, and technologically advanced**.
+            Join us in making a difference—one farm at a time!
+        </p>
+        <p><strong>50% of all course proceeds go to the <a href="https://www.worldwildlife.org" target="_blank">World Wildlife Fund (WWF)</a> to support environmental conservation.</strong></p>
+    </section>
+
+    <section class="courses" id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>Agroforestry</h3>
+                <p>Combining forestry and agriculture for sustainability.</p>
+                <p>Price: $21.99</p>
+                <button class="btn enroll-btn" data-course="Agroforestry">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Permaculture</h3>
+                <p>Designing self-sufficient, eco-friendly farming systems.</p>
+                <p>Price: $17.99</p>
+                <button class="btn enroll-btn" data-course="Permaculture">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Biodynamic Agriculture</h3>
+                <p>Integrating crops & livestock for a sustainable farm.</p>
+                <p>Price: $19.50</p>
+                <button class="btn enroll-btn" data-course="Biodynamic Agriculture">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Precision Agriculture</h3>
+                <p>Using AI & data-driven farming techniques.</p>
+                <button class="btn enroll-btn" data-course="Precision Agriculture">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Aquaponics</h3>
+                <p>Growing crops & fish together in a closed-loop system.</p>
+                <button class="btn enroll-btn" data-course="Aquaponics">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Cover Crops</h3>
+                <p>Planting crops to prevent erosion & improve soil health.</p>
+                <button class="btn enroll-btn" data-course="Cover Crops">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Integrated Pest Management (IPM)</h3>
+                <p>Using sustainable pest control methods.</p>
+                <button class="btn enroll-btn" data-course="Integrated Pest Management">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Organic Farming</h3>
+                <p>Prioritizing soil health & eco-friendly farming techniques.</p>
+                <button class="btn enroll-btn" data-course="Organic Farming">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-insights" class="ai-insights">
+        <h2>AI Farming Insights</h2>
+        <p>Upload your farm data and get AI-driven recommendations for soil health, irrigation, and crop rotation.</p>
+        <button class="btn enroll-btn" data-course="AI Farming Insights">Upload Data</button>
+    </section>
+
+    <section id="community" class="community">
+        <h2>Community Forum</h2>
+        <p>Join our discussion forum to connect with farmers, ask questions, and share knowledge.</p>
+        <a href="#" class="btn">Join Discussion</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Need assistance? Reach out to our support team.</p>
+        <a href="mailto:support@vitalsoilacademy.com" class="btn">Email Support</a>
+    </section>
+
+    <!-- Enrollment Modal -->
+    <div id="enrollModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enroll in <span id="courseName"></span></h2>
+            <form id="enrollForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit" class="btn">Confirm Enrollment</button>
+            </form>
+            <p id="confirmationMessage" style="display:none; color:green; font-weight:bold;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

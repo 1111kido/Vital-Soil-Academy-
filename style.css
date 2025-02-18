@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Centers all text */
+}
+
+/* Navbar */
+header {
+    background: #2c5f2d;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f8b400;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?farm,technology') no-repeat center center/cover;
+    color: rgb(33, 81, 53);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #f8b400;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e69a00;
+}
+
+/* About Section */
+.about, .ai-insights, .community, .contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+
+.about h2, .ai-insights h2, .community h2, .contact h2 {
+    font-size: 36px;
+    color: hsl(121, 37%, 27%);
+    margin-bottom: 20px;
+}
+
+/* Courses Section */
+.courses {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ddd;
+}
+
+.courses h2 {
+    font-size: 36px;
+    color: #2c5f2d;
+    margin-bottom: 20px;
+}
+
+/* Course Cards Grid */
+.course-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    color: #2c5f2d;
+    font-size: 24px;
+}
+
+.course-card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* AI Insights & Community */
+.ai-insights {
+    background: #e3f2fd;
+}
+
+.community {
+    background: #f4f4f4;
+}
+
+/* Contact Section */
+.contact {
+    background: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #2c5f2d;
+    color: white;
+    padding: 20px 0;
+    font-size: 16px;
+}
